@@ -3,8 +3,8 @@ import Config
 config :ploneconf, Ploneconf.Repo,
   username: System.get_env("POSTGRES_USER", "postgres"),
   password: System.get_env("POSTGRES_PASSWORD", "postgres"),
-  database: "ploneconf_prod",
-  hostname: "localhost",
+  database: System.get_conf("PG_DB", "ploneconf_prod"),
+  hostname: System.get_conf("PG_HOST", "localhost"),
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
