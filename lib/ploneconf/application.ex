@@ -11,9 +11,9 @@ defmodule Ploneconf.Application do
       # Start the Ecto repository
       Ploneconf.Repo,
       # Start the endpoint when the application starts
-      PloneconfWeb.Endpoint
+      PloneconfWeb.Endpoint,
       # Starts a worker by calling: Ploneconf.Worker.start_link(arg)
-      # {Ploneconf.Worker, arg},
+      {Ploneconf.GPad.Memory, %{"GPad" => "sucks"}}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

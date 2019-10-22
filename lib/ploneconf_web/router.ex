@@ -17,6 +17,9 @@ defmodule PloneconfWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/storage", PageController, :storage
+    get "/memory", PageController, :memory
+    get "/const", PageController, :const
   end
 
   # Other scopes may use custom stacks.
