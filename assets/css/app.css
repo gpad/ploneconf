@@ -1,3 +1,42 @@
 /* This file is for your main application css. */
 
 @import "./phoenix.css";
+@import url('https://fonts.googleapis.com/css?family=Economica&display=swap');
+body{
+  font-family: 'Economica', sans-serif;
+  font-size: 30px;
+}
+
+.phx-hero{
+  font-size: 1.6em;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  flex-direction: column;
+}
+
+ul{
+  list-style: none;
+}
+
+ul li{
+  margin: 0;
+  padding: 0;
+}
+
+ul li a{
+  color: inherit;
+  text-decoration: underline;
+  font-size: 0.8em;
+}
+
+.grande{
+  font-size: 6em;
+  padding: 30px 0;
+}

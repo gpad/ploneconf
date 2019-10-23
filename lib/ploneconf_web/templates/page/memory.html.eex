@@ -1,9 +1,8 @@
-<section class="phx-hero">
-  <h1><%= "GPad #{@value}!" %></h1>
-</section>
-
-<section class="row">
-  <article class="column">
+<div class="grande">
+  <%= "GPad #{@value}!" %>
+</div>
+<ul>
+  <li>
     <a href="/">home</a>
-  </article>
-</section>
+  </li>
+</ul>

@@ -1,21 +1,11 @@
-<section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>A productive web framework that<br/>does not compromise speed or maintainability.</p>
-</section>
-
-<section class="row">
-  <article class="column">
-    <h2>Links</h2>
-    <ul>
-      <li>
-        <a href="/storage">storage</a>
-      </li>
-      <li>
-        <a href="/memory">memory</a>
-      </li>
-      <li>
-        <a href="/const">const</a>
-      </li>
-    </ul>
-  </article>
-</section>
+  <ul>
+    <li>
+      <a href="/storage">storage</a>
+    </li>
+    <li>
+      <a href="/memory">memory</a>
+    </li>
+    <li>
+      <a href="/const">const</a>
+    </li>
+  </ul>
