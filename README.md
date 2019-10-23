@@ -13,7 +13,8 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 
 ## Create a release
 
-mix phx.digest
+node node_modules/webpack/bin/webpack.js --mode production
+MIX_ENV=prod mix phx.digest
 MIX_ENV=prod mix release
 
 ## Learn more

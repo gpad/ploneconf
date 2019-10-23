@@ -16,6 +16,16 @@ config :ploneconf, PloneconfWeb.Endpoint,
 # Do not print debug messages in production
 config :logger, level: :info
 
+config :ploneconf, Ploneconf.Repo,
+  username: System.get_env("POSTGRES_USER", "postgres"),
+  password: System.get_env("POSTGRES_PASSWORD", "postgres"),
+  database: System.get_env("PG_DB", "ploneconf_prod"),
+  hostname: System.get_env("PG_HOST", "localhost"),
+  show_sensitive_data_on_connection_error: true,
+  pool_size: 10
+
+
+
 # ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key
